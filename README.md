@@ -63,8 +63,8 @@ Etapele Algoritmului Grover:
 
 Implementarea Algoritmului Lui Grover pe IBM Quantum :
 
-![8](https://github.com/user-attachments/assets/22604d2e-8d00-4a91-af79-6482744045a8)
-![9](https://github.com/user-attachments/assets/f8408fb2-6d4e-486a-b6f5-656bf5961b79)
-![10](https://github.com/user-attachments/assets/77fa757a-bb42-4fc7-941d-3250f6ea76a4)
+![8 8](https://github.com/user-attachments/assets/393df06d-28f4-454d-8e6c-584e935e80cf)
+![9 9](https://github.com/user-attachments/assets/517f24c4-6ca0-45d0-ba5c-e62dfac579da)
+![10 10](https://github.com/user-attachments/assets/4b9a4228-6806-4203-8838-8ac49a3d505b)
 
 
