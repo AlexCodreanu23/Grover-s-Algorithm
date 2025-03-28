@@ -1,19 +1,19 @@
 # Grover's Algorithm
 
-Descriere:
+## Descriere
 Algoritmul lui Grover eficientizează problema de căutare pentru un set de date neordonate folosind mai puţini paşi decât oricare alt algoritm clasic.  Acest algoritm a fost conceput de Lov Grover in 1996. Algoritmul găseşte un singur element marcat într-un set de n elemente în complexitatea O(log(N)). Un algoritm clasic de căutare ar avea complexiatea O(N/2).
 
-Aplicații
+## Aplicații
 Algoritmul lui Grover este aplicabil petru orice problemă care poate fi redusă la verificarea validității unei valori date, de exemplu căutarea într-un set de date, factorizarea numerelor întregi, rezolvarea formulelor booleene și Traveling Salesman Problem.
 Algoritmul Grover poate fi utilizat pentru a decoda chei criptografice considerate sigure, pentru diverse atacuri brute-force asupra criptografiei cu cheie simetrică, inclusiv atacuri de coliziune și atacuri pre-imagine. De exemplu, ar putea decoda o cheie criptografică simetrică de 128 de biţi folosind brute-force în aproximativ 2^64 iteraţii şi o cheie de 256 de biţi în ≈2^128 iteraţii. Acest lucru prezintă un risc pentru securitatea tranzacțiilor online și comunicațiilor.
 Mai poate fi utilizat pentru a rezolva probleme de optimizare care sunt dificile sau imposibil de rezolvat cu un computer clasic.  Poate găsi mult mai eficient cel mai scurt drum între două puncte sau poate determina ce investiţii vor fi cele mai profitabile. De asemenea, poate fi folosit pentru detectarea activităţilor online illegale sau pentru diagnosticarea unor afecțiuni cum ar fi identificarea celulelor canceroase. 
 În domeniul învățării automate (machine learning) acest algoritm poate fi folosit pentru a eficientiza găsirea unor soluţii sau datelor relevante în baze mari de date.
 
-Limitări
+## Limitări
 Acest algoritm nu este încă practic deoarece necesită un număr mare de qubiţi pentru unele aplicaţii, iar in actualitate, calculatoarele cuantice nu sunt destul de avansate. Algoritmul lui Grover oferă un avantaj semnificativ doar pentru problemele care au un spațiu mare de căutare. Pentru probleme cu seturi de date mai restrânse, eficientizarea nu este destul de semnificativă pentru a justifica utilizarea acestuia. 
 La fel ca orice algoritm cuantic, algoritmul lui Grover este susceptibil la erori generate de noise– cauzat de interferenţe ale altor dispozitive, câmpuri magnetice şi interacţiuni între qubiţi; şi decoherence– colapsul superpoziţiei.
 
-Etapele Algoritmului Grover:
+## Etapele Algoritmului Grover:
 1. Starea inițială – Toate numerele sunt în suprapunere
 ●	Algoritmul începe cu un registru cuantic reprezentând un șir de N elemente (în acest exemplu, avem 8 numere).
 ●	Fiecare stare cuantică corespunde unui număr din șir.
