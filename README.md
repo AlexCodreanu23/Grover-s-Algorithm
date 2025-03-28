@@ -1,7 +1,7 @@
 # Grover's Algorithm
 
 ## Descriere
-Algoritmul lui Grover eficientizează problema de căutare pentru un set de date neordonate folosind mai puţini paşi decât oricare alt algoritm clasic.  Acest algoritm a fost conceput de Lov Grover in 1996. Algoritmul găseşte un singur element marcat într-un set de n elemente în complexitatea O(log(N)). Un algoritm clasic de căutare ar avea complexiatea O(N/2).
+Algoritmul lui Grover eficientizează problema de căutare pentru un set de date neordonate folosind mai puţini paşi decât oricare alt algoritm clasic.  Acest algoritm a fost conceput de Lov Grover in 1996. Algoritmul găseşte un singur element marcat într-un set de n elemente în complexitatea O(sqrt(N)). Un algoritm linear de căutare ar avea complexiatea O(N).
 
 ## Aplicații
 Algoritmul lui Grover este aplicabil petru orice problemă care poate fi redusă la verificarea validității unei valori date, de exemplu căutarea într-un set de date, factorizarea numerelor întregi, rezolvarea formulelor booleene și Traveling Salesman Problem.
