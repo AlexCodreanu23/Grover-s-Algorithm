@@ -6,7 +6,20 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-# Oracle pentru starea |101⟩
+# -------------------------------------------------
+# 1. Initializare: superpozitie uniforma pe 3 qubiti (starea initiala)
+# -------------------------------------------------
+init_circ = QuantumCircuit(3)
+init_circ.h([0, 1, 2])
+sv_initial = Statevector.from_instruction(init_circ)
+
+print("\nStatevector initial:")
+for i, amplitude in enumerate(sv_initial.data):
+    print(f"Stare {format(i, '03b')}: {np.round(amplitude, 2)}")
+
+# -------------------------------------------------
+# 2. Oracle pentru starea |101⟩ (inversarea fazei pentru numarul cautat(oracle))
+# -------------------------------------------------
 oracle = QuantumCircuit(3, name='oracle')
 oracle.x(1)          # inversam qubitul 1 (deoarece e 0 in tinta noastra)
 oracle.h(2)
@@ -19,19 +32,9 @@ oracle_gate = oracle.to_gate()
 print("Oracle (marcheaza starea |101⟩):")
 print(oracle.draw())
 
-# -------------------------------------------------
-# 2. Initializare: superpozitie uniforma pe 3 qubiti
-# -------------------------------------------------
-init_circ = QuantumCircuit(3)
-init_circ.h([0, 1, 2])
-sv_initial = Statevector.from_instruction(init_circ)
-
-print("\nStatevector initial:")
-for i, amplitude in enumerate(sv_initial.data):
-    print(f"Stare {format(i, '03b')}: {np.round(amplitude, 2)}")
 
 # -----------------------------------------------------
-# 3. Operatorul de difuzie (inversia in jurul mediei)
+# 3. Operatorul de difuzie (inversia in jurul mediei) 
 # -----------------------------------------------------
 diffusion = QuantumCircuit(3, name='diffusion')
 diffusion.h([0, 1, 2])
@@ -47,7 +50,7 @@ print("\nOperatorul de difuzie:")
 print(diffusion.draw())
 
 # --------------------------------------
-# 4. Circuitul complet Grover
+# 4. Circuitul complet Grover(cresterea progresiva a amplitudinii)
 # --------------------------------------
 grover = QuantumCircuit(3)
 grover.h([0, 1, 2])
@@ -59,7 +62,7 @@ print("\nCircuitul complet Grover:")
 print(grover.draw())
 
 # -----------------------------------------------------
-# 5. Simularea circuitului pe simulator
+# 5. Simularea circuitului pe simulator (probabilitati finale)
 # -----------------------------------------------------
 from qiskit_aer import Aer
 simulator = Aer.get_backend('qasm_simulator')
